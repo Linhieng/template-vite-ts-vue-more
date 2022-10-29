@@ -1,0 +1,9 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+body {
+    @include scrollBar;
+
+    height          : 100%;
+    background-color: $theme;
+}
