@@ -405,6 +405,13 @@ import App from '~/App.vue'
 }
 ```
 
+**补充**, 如果想要在 html 中使用别名, 需要在前面加上一个 `~` (暂时不清楚什么原理), 比如:
+
+```html
+<img src="~~/assets/vue.svg" alt="Vue logo" /> <!-- 若 ~ 是别名 -->
+<img src="~@/assets/vue.svg" alt="Vue logo" /> <!-- 若 @ 是别名 -->
+```
+
 ### 使用 sass
 
 使用 sass 特别简单, 直接安装 `sass` 就可以使用
